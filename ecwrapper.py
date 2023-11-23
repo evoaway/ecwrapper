@@ -8,6 +8,7 @@ class ECPoint:
         self.y = y
         self.curve = curve
 
+    # overriding the method for comparing objects
     def __eq__(self, other):
         if not isinstance(other, type(self)):
             return NotImplemented
@@ -53,6 +54,12 @@ def ECPointToString(p: ECPoint):
 
 
 def StringToECPoint(s):
+    """
+    Accepts a string containing the coordinates of a point as hexadecimal numbers or
+    coordinates and the name of a curve that is implemented in the library fastecdsa
+    :param s: s - string
+    :return: ECPoint
+    """
     curves_dict = {
         'P192': curve.P192,
         'P224': curve.P224,
