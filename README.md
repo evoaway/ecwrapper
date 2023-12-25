@@ -2,7 +2,7 @@
 Elliptic curve wrapper
 
 # Description
-This is a working wrapper for using a library that works with algebra on elliptic curves. A library was used [fastecdsa](https://github.com/AntonKueltz/fastecdsa/tree/main).
+This is a working wrapper for using a library that works with algebra on elliptic curves. A library was used [fastecdsa](https://github.com/AntonKueltz/fastecdsa/tree/main). You can use pip: `$ pip install fastecdsa`
 The wrapper contains two classes and several methods that implement basic tasks for working with elliptic curves and points on them.
 * `class ECpoint` - a point on a curve containing coordinates and the curve on which it lies
 * `class Curve` - elliptic curve, creates an elliptic curve from the library
